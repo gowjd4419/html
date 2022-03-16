@@ -31,7 +31,7 @@
         // $("선택자").hide() - 선택요소 숨기기
         // $("선택자").show() - 선택요소 보이기
         // $("선택자").toggle() - 보이면 숨기고, 안보이면 노출
-        // $("선택자").slideup() - 말아올라가듯 숨김
+        // $("선택자").slideUp() - 말아올라가듯 숨김
         // $("선택자").slideDown() - 말아내려오듯 노출
         // $("선택자").slideToggle() - slide형태로 toggle 적용
         // $("선택자").fadeOut() - 서서히 사라지게함
@@ -61,10 +61,10 @@
 
             // #btn4를 클릭했을때 #btn4의 부모(.parent())의
             // 다음 형제(.next())를 말아올려 숨기는 이벤트를 걸기
-            // hint) .parent().next().sli....
+            // hint) .parent().next().sli....  <= 과제
             $("#btn4").click(function(){
-                $("#btn4").parent("p").next().slideup();
-            })
+                $("#btn4").parent("p").next().slideUp("slow");
+            });
         });
     </script>
     <meta charset="UTF-8">
